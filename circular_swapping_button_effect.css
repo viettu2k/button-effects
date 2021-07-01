@@ -7,24 +7,24 @@ body {
     font-family: sans-serif;
 }
 
-.btn {
+a {
+    text-decoration: none;
     border: 5px solid tomato;
     background: none;
     color: tomato;
-    padding: 20px 40px;
-    font-size: 25px;
+    padding: 40px 80px;
+    font-size: 45px;
     text-transform: uppercase;
-    cursor: pointer;
     transition: all 1s;
     position: relative;
     overflow: hidden;
 }
 
-.btn:hover {
+a:hover {
     color: white;
 }
 
-.btn:before {
+a:before {
     content: "";
     position: absolute;
     top: 0;
@@ -38,6 +38,6 @@ body {
     transition: all 1s;
 }
 
-.btn:hover:before {
+a:hover:before {
     height: 190%;
 }
