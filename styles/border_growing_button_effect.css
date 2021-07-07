@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=BenchNine:wght@700&display=swap');
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #272727;
+}
+
+a {
+    border: none;
+    text-decoration: none;
+    padding: 40px 80px;
+    background-color: #c47135;
+    color: white;
+    font-family: 'BenchNine';
+    font-size: 45px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+a:before {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    top: -10px;
+    left: -10px;
+    border-top: 5px solid #c47135;
+    border-left: 5px solid #c47135;
+    transition: all 0.5s;
+}
+
+a:hover:before,
+a:hover::after {
+    height: 100%;
+    width: 100%;
+}
+
+a:after {
+    content: "";
+    position: absolute;
+    width: 60px;
+    height: 60px;
+    bottom: -10px;
+    right: -10px;
+    border-bottom: 5px solid #c47135;
+    border-right: 5px solid #c47135;
+    transition: all 0.5s;
+}
